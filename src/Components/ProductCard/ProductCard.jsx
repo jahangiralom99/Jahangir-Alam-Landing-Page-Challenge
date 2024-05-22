@@ -6,7 +6,7 @@ const ProductCard = ({ product }) => {
   const { name, price, image } = product || {};
   const total = price - 10;
   return (
-    <div className="flex-shrink-0  m-6 relative overflow-hidden rounded-lg group">
+    <div className="flex-shrink-0  relative overflow-hidden rounded-lg group">
       <div className="relative bg-[#F7F7F7] md:h-64 pt-10 px-10 flex items-center justify-center">
         <img className="relative object-cover" src={image} alt="" />
         {/* 10% Dis */}

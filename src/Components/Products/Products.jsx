@@ -3,43 +3,42 @@ import ProductCard from "../ProductCard/ProductCard";
 const Products = () => {
   const products = [
     {
-        "id": "1",
-        "name": "Wireless Mouse",
-        "image": "https://i.ibb.co/HqdNzzv/a7117ef381c3fe3731b33eb93009a85f-1.png",
-        "price": 29.99
+      id: "1",
+      name: "Bravo Sunglasses",
+      image: "https://i.ibb.co/HqdNzzv/a7117ef381c3fe3731b33eb93009a85f-1.png",
+      price: 100,
     },
     {
-        "id": "2",
-        "name": "Mechanical Keyboard",
-        "image": "https://i.ibb.co/Kbtj2Wv/7942e670c9ceed022616375693c16d44.png",
-        "price": 79.99
+      id: "2",
+      name: "Vincent Chase",
+      image: "https://i.ibb.co/Kbtj2Wv/7942e670c9ceed022616375693c16d44.png",
+      price: 120,
     },
     {
-        "id": "3",
-        "name": "HD Monitor",
-        "image": "https://i.ibb.co/v4QMp8Z/b5a26083e25e7f6b66a00744b0bcc8be.png",
-        "price": 199.99
+      id: "3",
+      name: "John Jacobs",
+      image: "https://i.ibb.co/v4QMp8Z/b5a26083e25e7f6b66a00744b0bcc8be.png",
+      price: 100,
     },
     {
-        "id": "4",
-        "name": "USB-C Hub",
-        "image": "https://i.ibb.co/JjX0Z7N/72110fc6951f7e011754b81397f0352a-1.png",
-        "price": 49.99
+      id: "4",
+      name: "Tommy Hilfiger",
+      image: "https://i.ibb.co/JjX0Z7N/72110fc6951f7e011754b81397f0352a-1.png",
+      price: 130,
     },
     {
-        "id": "5",
-        "name": "Gaming Chair",
-        "image": "https://i.ibb.co/JjX0Z7N/72110fc6951f7e011754b81397f0352a-1.png",
-        "price": 149.99
+      id: "5",
+      name: "Ray Ban",
+      image: "https://i.ibb.co/JjX0Z7N/72110fc6951f7e011754b81397f0352a-1.png",
+      price: 149,
     },
     {
-        "id": "6",
-        "name": "Portable SSD",
-        "image": "https://i.ibb.co/HqdNzzv/a7117ef381c3fe3731b33eb93009a85f-1.png",
-        "price": 99.99
-    }
-]
-
+      id: "6",
+      name: "Occhiali",
+      image: "https://i.ibb.co/HqdNzzv/a7117ef381c3fe3731b33eb93009a85f-1.png",
+      price: 110,
+    },
+  ];
 
   return (
     <div className="max-w-screen-xl mx-auto px-4 mt-32">
@@ -58,7 +57,7 @@ const Products = () => {
         </div>
       </div>
       {/* Card Section */}
-      <div className="grid grid-cols-1 md:grid-cols-3">
+      <div className="grid gap-8 lg:gap-12 grid-cols-1 md:grid-cols-3">
         {products.map((product) => (
           <ProductCard key={product.id} product={product}></ProductCard>
         ))}

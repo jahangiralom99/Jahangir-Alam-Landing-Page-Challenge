@@ -14,18 +14,36 @@ const Footer = () => {
     // Footer sections
     {
       type: "section",
-      title: "Solutions",
-      items: ["Analytics", "Marketing", "Commerce", "Insights"],
+      title: "Support",
+      items: [
+        "Privacy Policy",
+        "Terms & Conditions",
+        "Product FAQs",
+        "Company Support",
+        "Manage Account",
+      ],
     },
     {
       type: "section",
       title: "Support",
-      items: ["Pricing", "Documentation", "Guides", "API Status"],
+      items: [
+        "About Us",
+        "Blog Post",
+        "Product Features",
+        "Company Info",
+        "Company Info",
+      ],
     },
     {
       type: "section",
-      title: "Company",
-      items: ["About", "Blog", "Jobs", "Press", "Careers"],
+      title: "Communnity",
+      items: [
+        "Become an affiliate",
+        "Help Center",
+        "Product FAQs",
+        "Our Fourms",
+        "Product API",
+      ],
     },
   ];
 
@@ -40,9 +58,8 @@ const Footer = () => {
             alt=""
           />
           <p className="py-4">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id odit
-            ullam iste repellat consequatur libero reiciendis, blanditiis
-            accusantium.
+            Latin literature from 45 BC, making it over 2000 years old. Richard
+            McClintock, a Latin professor at Hampde
           </p>
           <div className="flex gap-3 md:w-[75%] my-6">
             {/* Mapping over social icons and rendering the SocialIcon component */}
@@ -59,13 +76,13 @@ const Footer = () => {
           {items.map((item, index) =>
             item.type === "section" ? (
               <div key={index}>
-                <h6 className="font-medium text-gray-600 text-xl">
+                <h6 className="font-bold text-[#383838] text-xl">
                   {item.title}
                 </h6>
                 <ul>
                   {/* Mapping over items in each section */}
                   {item.items.map((subItem, subIndex) => (
-                    <li key={subIndex} className="py-2 text-sm">
+                    <li key={subIndex} className="py-2 text-sm text-[#383838]">
                       {subItem}
                     </li>
                   ))}
@@ -80,7 +97,7 @@ const Footer = () => {
         <h1>Copyright © 2023 All rights reserved by Eyeglass</h1>
         <div className="flex items-center gap-3">
           <p className="hover:underline">Privacy Policy</p>
-          <p  className="hover:underline">Terms of service</p>
+          <p className="hover:underline">Terms of service</p>
         </div>
       </div>
     </footer>
