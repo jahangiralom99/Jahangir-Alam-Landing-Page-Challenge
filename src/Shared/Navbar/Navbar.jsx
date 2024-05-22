@@ -1,10 +1,10 @@
 import { useState } from "react";
-import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
 import NavbarLink from "./NavbarLink";
 
 const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
+  const cart = JSON.parse(localStorage.getItem("item")) || [];
 
   return (
     <nav className="max-w-screen-xl mx-auto bg-white/90 ">
@@ -22,7 +22,6 @@ const Navbar = () => {
               aria-label="WindUI logo"
               aria-current="page"
               className="flex items-center whitespace-nowrap py-3 text-lg focus:outline-none lg:flex-1"
-              href="javascript:void(0)"
             >
               <img
                 className="w-[194px]"
@@ -72,7 +71,28 @@ const Navbar = () => {
             </ul>
             {/*      <!-- Actions --> */}
             <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 gap-3 lg:p-0">
-              <FaShoppingCart className="text-xl" />
+              <div className="relative inline-flex h-10 w-10 items-center justify-center rounded-full text-lg text-black">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth="1.5"
+                  aria-labelledby="title description"
+                  role="graphics-symbol"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                  />
+                </svg>
+                <span className="absolute -right-1.5 -top-1.5 inline-flex items-center justify-center gap-1 rounded-full border-2 border-white bg-pink-500 px-1.5 text-sm text-white">
+                  {cart.length ? cart.length : 0}
+                  <span className="sr-only"> new emails </span>
+                </span>
+              </div>
               <FaUser className="text-xl" />
             </div>
           </nav>

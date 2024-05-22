@@ -23,13 +23,13 @@ const Banner = () => {
   }, []);
 
   return (
-    <div className="bg-[#EAEAEA] ">
+    <div className="bg-[#EAEAEA] relative">
       <>
         {/*<!-- Component: Slider with indicators inside --> */}
         <div className="relative w-full glide-02">
           {/*    <!-- Slides --> */}
           <div className="overflow-hidden" data-glide-el="track">
-            <ul className="whitespace-no-wrap flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex overflow-hidden p-0">
+            <ul className="whitespace-no-wrap overflow-hidden flex-no-wrap [backface-visibility: hidden] [transform-style: preserve-3d] [touch-action: pan-Y] [will-change: transform] relative flex overflow-hidden p-0">
               <li>
                 <div className="max-w-screen-xl p-4 md:p-0 mx-auto px-4 flex flex-col md:flex-row-reverse items-center justify-center">
                   <div className="flex items-center justify-center pt-8">
@@ -109,38 +109,40 @@ const Banner = () => {
             </ul>
           </div>
           {/*    <!-- Indicators --> */}
-          <div
-            className="absolute top-28 left-44 md:left-[350px] lg:top-[250px] lg:left-[600px] flex flex-col items-center justify-center w-full gap-2"
-            data-glide-el="controls[nav]"
-          >
-            <button
-              className="p-4 group"
-              data-glide-dir="=0"
-              aria-label="goto slide 1"
+          <div className="">
+            <div
+              className="absolute top-32 lg:top-40 right-6 md:right-10 lg:right-16 flex flex-col gap-2"
+              data-glide-el="controls[nav]"
             >
-              <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-            </button>
-            <button
-              className="p-4 group"
-              data-glide-dir="=1"
-              aria-label="goto slide 2"
-            >
-              <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-            </button>
-            <button
-              className="p-4 group"
-              data-glide-dir="=2"
-              aria-label="goto slide 3"
-            >
-              <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-            </button>
-            <button
-              className="p-4 group"
-              data-glide-dir="=3"
-              aria-label="goto slide 4"
-            >
-              <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
-            </button>
+              <button
+                className="p-4 group"
+                data-glide-dir="=0"
+                aria-label="goto slide 1"
+              >
+                <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
+              </button>
+              <button
+                className="p-4 group"
+                data-glide-dir="=1"
+                aria-label="goto slide 2"
+              >
+                <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
+              </button>
+              <button
+                className="p-4 group"
+                data-glide-dir="=2"
+                aria-label="goto slide 3"
+              >
+                <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
+              </button>
+              <button
+                className="p-4 group"
+                data-glide-dir="=3"
+                aria-label="goto slide 4"
+              >
+                <span className="block w-2 h-2 transition-colors duration-300 rounded-full bg-white/20 ring-1 ring-slate-700 focus:outline-none"></span>
+              </button>
+            </div>
           </div>
         </div>
       </>
@@ -149,4 +151,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
