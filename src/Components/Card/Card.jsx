@@ -1,9 +1,9 @@
 const Card = () => {
   return (
-    <div className=" grid md:grid-cols-2 gap-5 max-w-screen-xl mx-auto px-4 mt-12">
+    <div className=" grid md:grid-cols-2 gap-5 max-w-screen-xl mx-auto px-4 mt-28">
       <div>
         <img
-          className="h-[630px]  max-w-full w-[640px] object-cover"
+          className="h-[630px]  max-w-full w-[640px] object-cover rounded-md"
           src="https://i.postimg.cc/bw5BdhZD/a346f4c609f31ce6a2525398a3bad305.jpg"
           alt=""
         />
@@ -19,7 +19,7 @@ const Card = () => {
       </div>
       <div>
         <img
-          className="h-[509px]  max-w-full w-[640px] object-cover "
+          className="h-[509px]  max-w-full w-[640px] object-cover rounded-md"
           src="https://i.postimg.cc/t7Qg9fFL/0d5c6e926ba996d2e919c8c58df23555.jpg"
           alt=""
         />
@@ -35,7 +35,7 @@ const Card = () => {
       </div>
       <div>
         <img
-          className="h-[509px] w-[640px] max-w-full object-cover"
+          className="h-[509px] w-[640px] max-w-full object-cover rounded-md"
           src="https://i.postimg.cc/vZGV9g6C/3b6bcd36a7ff0fa6d179a2b50636b6b1.jpg"
           alt=""
         />
@@ -51,7 +51,7 @@ const Card = () => {
       </div>
       <div>
         <img
-          className="h-[630px] md:-mt-[120px] w-[640px] object-cover"
+          className="h-[630px] md:-mt-[120px] w-[640px] object-cover rounded-md"
           src="https://i.postimg.cc/MKqTrkKQ/0f40d3f398cfcaa171779f8fab937903.jpg"
           alt=""
         />
@@ -70,4 +70,3 @@ const Card = () => {
 };
 
 export default Card;
-
