@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
+import NavbarLink from "./NavbarLink";
 
 const Navbar = () => {
   const [isToggleOpen, setIsToggleOpen] = useState(false);
@@ -67,72 +68,12 @@ const Navbar = () => {
                   : "invisible opacity-0"
               }`}
             >
-              <li role="none" className="flex items-stretch">
-                <a
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none "
-                  href="javascript:void(0)"
-                >
-                  <span>Home</span>
-                </a>
-              </li>
-              <li role="none" className="flex items-stretch">
-                <a
-                  role="menuitem"
-                  aria-current="page"
-                  aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 text-emerald-500 transition-colors duration-300 hover:text-emerald-600 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-4"
-                  href="javascript:void(0)"
-                >
-                  <span>About Us</span>
-                </a>
-              </li>
-              <li role="none" className="flex items-stretch">
-                <a
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-4"
-                  href="javascript:void(0)"
-                >
-                  <span>Products</span>
-                </a>
-              </li>
-              <li role="none" className="flex items-stretch">
-                <a
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-4"
-                  href="javascript:void(0)"
-                >
-                  <span>Features</span>
-                </a>
-              </li>
-              <li role="none" className="flex">
-                <a
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-4"
-                  href="javascript:void(0)"
-                >
-                  <span>Reviews</span>
-                </a>
-              </li>
-              <li role="none" className="flex items-stretch">
-                <a
-                  role="menuitem"
-                  aria-haspopup="false"
-                  className="flex items-center gap-2 py-4 transition-colors duration-300 hover:text-emerald-500 focus:text-emerald-600 focus:outline-none focus-visible:outline-none lg:px-4"
-                  href="javascript:void(0)"
-                >
-                  <span>Contact Us</span>
-                </a>
-              </li>
+              <NavbarLink />
             </ul>
             {/*      <!-- Actions --> */}
             <div className="ml-auto flex items-center justify-end px-6 lg:ml-0 lg:flex-1 gap-3 lg:p-0">
               <FaShoppingCart className="text-xl" />
-              <FaUser  className="text-xl" />
+              <FaUser className="text-xl" />
             </div>
           </nav>
         </div>
