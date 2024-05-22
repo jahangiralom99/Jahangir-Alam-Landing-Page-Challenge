@@ -1,9 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
 const AboutUs = () => {
   return (
-    <div className="mt-32 md:flex ">
+    <div className="mt-32 md:flex">
       <div className="bg-[#FED29C]  flex-1 flex ">
-        <div className="flex flex-col p-12 w-full md:w-[500px] justify-center mx-auto text-[#383838] gap-3">
+        <div className="flex flex-col p-12 w-full md:w-[550px] justify-center mx-auto text-[#383838] gap-3">
           <h1 className="text-2xl font-bold">
             Experience clear vision with OptiChroma Vision Frames
           </h1>
