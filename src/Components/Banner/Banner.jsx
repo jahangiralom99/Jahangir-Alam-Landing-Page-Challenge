@@ -1,7 +1,7 @@
 const Banner = () => {
   return (
     <div className="bg-[#EAEAEA] relative">
-      <div className="max-w-screen-xl mx-auto px-4 flex flex-col md:flex-row-reverse items-center justify-center">
+      <div className="max-w-screen-xl p-4 md:p-0 mx-auto px-4 flex flex-col md:flex-row-reverse items-center justify-center">
         <div className="flex items-center justify-center pt-8">
           <img
             className="lg:h-screen"
@@ -9,7 +9,7 @@ const Banner = () => {
             alt=""
           />
         </div>
-        <div className="">
+        <div className="px-6">
           <h1 className="text-4xl font-bold text-[#383838]">
             Personalized Eyeglass <br /> Shopping
           </h1>
